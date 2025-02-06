@@ -1,0 +1,17 @@
+@import "./reset/reset.css";
+@import "./components/card.css";
+@import "./components/form.css";
+@import "./components/modal.css";
+
+body {
+	background-color: #1c1c28;
+	color: var(--text-color);
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	box-sizing: border-box;
+}
+
+:root {
+	--purple-color: #652be3;
+	--text-color: #f0f0f5;
+	--background-color: #2e2e3e;
+}

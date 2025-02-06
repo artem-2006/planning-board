@@ -1,0 +1,98 @@
+.container {
+	display: flex;
+	padding: 1rem;
+	max-width: 1400px;
+}
+label {
+	font-size: 15.5px;
+	padding-top: 0.7rem;
+}
+
+.task-form {
+	flex: 0 0 450px;
+	background-color: #2e2e3e;
+	border-radius: 15px;
+	padding: 2rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+	margin-top: 5.2rem;
+	height: 100%;
+	padding-bottom: 90px;
+}
+
+.task-form h3 {
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	font-size: 28px;
+}
+
+.task-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+button.btn-custom:active {
+	border: var(--purple-color) 1px solid !important;
+}
+
+button.btn-custom:hover {
+	background-color: #4c1792;
+}
+
+.btn-custom {
+	background-color: var(--purple-color);
+	color: white;
+	width: 100%;
+	padding: 10px;
+	margin-top: 0.5rem;
+}
+
+.task-form input[type="text"],
+.task-form textarea,
+.task-form select,
+.task-form input[type="date"] {
+	background-color: #2e2e3e !important;
+	color: white !important;
+	border: 1px solid var(--purple-color) !important;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.task-form input[type="text"]::placeholder,
+.task-form textarea::placeholder {
+	color: #bbb !important;
+	opacity: 1;
+}
+
+.task-form input[type="text"]:focus,
+.task-form textarea:focus {
+	border-color: #4c1792 !important;
+	outline: none !important;
+}
+
+span {
+	color: #8c34ff;
+}
+
+@media (max-width: 768px) {
+	.container {
+		flex-direction: column;
+	}
+
+	.task-form {
+		width: 100%;
+		margin-bottom: 2rem;
+		margin-top: 0;
+	}
+
+	.task-container {
+		width: 100%;
+		justify-content: center;
+	}
+}
+
+@media (max-height: 809px) {
+	.task-form {
+		margin-top: 15px;
+	}
+}
