@@ -28,6 +28,7 @@
 					<div class="mb-3">
 						<label for="taskDescription" class="form-label">Описание задачи</label>
 						<textarea
+							required
 							class="form-control"
 							id="taskDescription"
 							rows="3"
@@ -46,10 +47,10 @@
 						<label for="taskPeriod" class="form-label">Период выполнения</label>
 						<div class="row g-2">
 							<div class="col">
-								<input type="date" class="form-control" id="taskStartDate" />
+								<input required type="date" class="form-control" id="taskStartDate" />
 							</div>
 							<div class="col">
-								<input type="date" class="form-control" id="taskEndDate" />
+								<input required type="date" class="form-control" id="taskEndDate" />
 							</div>
 						</div>
 					</div>

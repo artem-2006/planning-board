@@ -1,6 +1,7 @@
 .card-task {
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 }
 .search-container {
 	display: flex;
