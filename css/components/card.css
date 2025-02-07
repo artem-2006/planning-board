@@ -28,7 +28,8 @@
 	column-gap: 25px;
 	flex-wrap: wrap;
 	margin-left: 3rem;
-	max-height: 660px;
+	min-height: 600px;
+	max-height: 640px;
 	overflow-y: auto;
 }
 

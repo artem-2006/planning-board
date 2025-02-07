@@ -28,7 +28,11 @@ export const addCard = () => {
 		const startDate = new Date(taskStartDateEl.value);
 		const endDate = new Date(taskEndDateEl.value);
 
-		if (startDate > endDate) {
+		if (taskDescription.trim() === "") {
+			alert("Описание не может быть пустым!");
+		}
+
+		if (startDate >= endDate) {
 			alert("Дата окончания не может быть раньше даты начала!");
 			return;
 		}
