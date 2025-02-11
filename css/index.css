@@ -8,6 +8,13 @@ body {
 	color: var(--text-color);
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	box-sizing: border-box;
+	overflow: hidden;
+}
+
+@media (max-width: 768px) {
+	body {
+		overflow: auto;
+	}
 }
 
 :root {
