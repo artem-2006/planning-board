@@ -80,3 +80,13 @@ export const editCardTask = () => {
 		});
 	}
 };
+
+export const openDateImput = () => {
+	const dataInputArr = document.querySelectorAll(".form-control");
+
+	dataInputArr.forEach((item) => {
+		item.addEventListener("click", () => {
+			item.showPicker();
+		});
+	});
+};
